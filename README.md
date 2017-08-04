@@ -1,0 +1,2 @@
+#SpringbootWebSocket
+SpringBoot整合Websocket，实现广播式和给特定用户发送消息，不需要登录即可发送消息。
