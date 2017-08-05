@@ -55,9 +55,10 @@ public class GreetingController {
         List<String> keys=webAgentSessionRegistry.getAllSessionIds().entrySet()
                 .stream().map(Map.Entry::getKey)
                 .collect(Collectors.toList());
+        Date date=new Date();
         keys.forEach(x->{
             String sessionId=webAgentSessionRegistry.getSessionIds(x).stream().findFirst().get().toString();
-            template.convertAndSendToUser(sessionId,"/topic/greetings",new OutMessage("commmsg：allsend, " + "send  comm" + "!"),createHeaders(sessionId));
+            template.convertAndSendToUser(sessionId,"/topic/greetings",new OutMessage("commmsg：allsend, " + "send  comm" +date.getTime()+ "!"),createHeaders(sessionId));
 
         });
          return new OutMessage("sendcommuser, " + new Date() + "!");
