@@ -8,4 +8,4 @@ SpringBoot整合Websocket，实现广播式和给特定用户发送消息，不�
 
 > 访问http://localhost:82进入主页
 
- ![](https://git.oschina.net/bgt0314/SpringbootWebSocket/tree/master/src/main/resources/static/image/index.png) 
+ ![](/src/main/resources/static/image/index.png) 
