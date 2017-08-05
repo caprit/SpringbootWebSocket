@@ -18,6 +18,8 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
     public void configureMessageBroker(MessageBrokerRegistry config) {
         config.enableSimpleBroker("/topic");// /users 默认通知
         config.setApplicationDestinationPrefixes("/app");
+        //设置前缀  默认是user 可以修改  点对点时使用
+        //config.setUserDestinationPrefix("/user/");
     }
 
     @Override
