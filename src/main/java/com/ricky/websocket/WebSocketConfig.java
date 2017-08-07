@@ -19,7 +19,7 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
         config.enableSimpleBroker("/topic");// /users 默认通知
         config.setApplicationDestinationPrefixes("/app");
         //设置前缀  默认是user 可以修改  点对点时使用
-        //config.setUserDestinationPrefix("/user/");
+        config.setUserDestinationPrefix("/ricky/");
     }
 
     @Override

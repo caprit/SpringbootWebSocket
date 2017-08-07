@@ -5,7 +5,7 @@
 <script src="/webjars/sockjs-client/1.0.2/sockjs.min.js"></script>
 <script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
 <body>
-    <blockquote class="layui-elem-quote">/user/topic-message2</blockquote>
+    <blockquote class="layui-elem-quote">/ricky/topic-message2</blockquote>
 
     <div id="main-content" class="container">
         <div class="row">
@@ -67,7 +67,7 @@
             stompClient.connect({login:login}, function (frame) {
                 setConnected(true);
                 console.log('Connected: ' + frame);
-                stompClient.subscribe('/user/topic/greetings', function (greeting) {
+                stompClient.subscribe('/ricky/topic/greetings', function (greeting) {
                     showGreeting(JSON.parse(greeting.body).content);
                 });
             });
